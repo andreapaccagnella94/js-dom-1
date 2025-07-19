@@ -12,3 +12,5 @@ console.log(lampOnEl);
 //identifico il bottone
 const buttonEl = document.querySelector("button");
 console.log(buttonEl);
+
+//creo l'evento 
