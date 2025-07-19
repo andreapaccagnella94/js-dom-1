@@ -14,3 +14,11 @@ const buttonEl = document.querySelector("button");
 console.log(buttonEl);
 
 //creo l'evento 
+
+buttonEl.addEventListener("click",
+    function () {
+        lampOffEl.style.display = "none"
+        lampOnEl.style.display = "block"
+    }
+    //quando premo una lampada va block e l'altra va none
+)
