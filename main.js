@@ -12,13 +12,22 @@ console.log(lampOnEl);
 //identifico il bottone
 const buttonEl = document.querySelector("button");
 console.log(buttonEl);
+console.log(buttonEl.innerText);
+
 
 //creo l'evento 
 
 buttonEl.addEventListener("click",
     function () {
-        lampOffEl.style.display = "none"
-        lampOnEl.style.display = "block"
+        if (buttonEl.innerText === "Accendi") {
+            lampOffEl.style.display = "none"
+            lampOnEl.style.display = "block"
+            buttonEl.innerText = "Spegni"
+        } else if (buttonEl.innerText === "Spegni") {
+            lampOffEl.style.display = "block"
+            lampOnEl.style.display = "none"
+            buttonEl.innerText = "Accendi"
+        }
     }
     //quando premo una lampada va block e l'altra va none
 )
